@@ -7,13 +7,12 @@ import React from 'react';
 export function Presentation() {
   // Personal information
   const profile = {
-    name: 'Raphael Giraud',
+    name: 'Mudit Golchha',
     age: '21 years old',
-    location: 'Paris, France',
-    // Add a newline character after the emoji
+    location: 'Binghamton, NY, USA',
     description:
-      "Hey 👋\nI'm Raph also known as Toukoum. I'm a developer specializing in AI at 42 Paris. I'm working at LightOn AI in Paris. I'm passionate about AI, tech, Entrepreneurship and SaaS tech.",
-    src: '/profil-raph.png',
+      "Hey 👋\nI'm Mudit — a CS grad student at Binghamton University specializing in AI, ML/DL, and Reinforcement Learning. I build intelligent systems, full-stack web apps, and even my own programming language (MLang). Always exploring new tech and creative ideas.",
+    src: '/profil-mudit.JPG', // Use any placeholder for now; update later
     fallbackSrc:
       'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
   };
@@ -103,7 +102,7 @@ export function Presentation() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-4 flex flex-wrap gap-2"
           >
-            {['AI', 'Developer', '42 Paris', 'Sport', 'SaaS Builder'].map(
+            {['AI', 'ML/DL', 'Reinforcement Learning', 'IoT', 'Full Stack'].map(
               (tag) => (
                 <span
                   key={tag}
