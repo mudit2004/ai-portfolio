@@ -45,7 +45,7 @@ const CodeBlock = ({ content }: { content: string }) => {
     >
       <div className="bg-secondary text-secondary-foreground flex items-center justify-between rounded-t-md border-b px-4 py-1">
         <span className="text-xs">
-          {language !== 'text' ? language : 'Code'}
+          {language}
         </span>
         <CollapsibleTrigger className="hover:bg-secondary/80 rounded p-1">
           {isOpen ? (
