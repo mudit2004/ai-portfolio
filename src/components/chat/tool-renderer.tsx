@@ -6,7 +6,7 @@ import { Presentation } from '../presentation';
 import AllProjects from '../projects/AllProjects';
 import Resume from '../resume';
 import Skills from '../skills';
-import Sports from '../sport';
+import Sports from '../gallery';
 
 interface ToolRendererProps {
   toolInvocations: any[];
