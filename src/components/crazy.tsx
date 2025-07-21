@@ -4,11 +4,11 @@ import React from 'react';
 import { Photos, PhotoItem } from './photos';
 
 const Crazy = () => {
-  const sportPhotos: PhotoItem[] = [
+  const funPhotos: PhotoItem[] = [
     {
-      src: '/blancmont.JPG',
-      alt: 'Mont Blanc',
-      caption: 'On top of Mont Blanc (me in blue behind)',
+      src: '/fun-mudit.JPG',
+      alt: 'Mudit with guitar',
+      caption: 'Performing live with The_Unknowns (college band I started)',
     },
   ];
 
@@ -16,10 +16,10 @@ const Crazy = () => {
     <div className="mx-auto w-full">
       <div className="mb-8">
         <h2 className="text-foreground text-3xl font-semibold md:text-4xl">
-          Mont Blanc (4810m)
+          The Unknowns 🎸
         </h2>
       </div>
-      <Photos photos={sportPhotos} />
+      <Photos photos={funPhotos} />
     </div>
   );
 };
