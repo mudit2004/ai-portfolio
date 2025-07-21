@@ -62,10 +62,10 @@ const ChatLanding: React.FC<ChatLandingProps> = ({ submitQuery }) => {
       {/* Welcome message */}
       <motion.div className="mb-8 text-center" variants={itemVariants}>
         <h2 className="mb-3 text-2xl font-semibold">
-            I'm Raphael's digital twin
+          I'm Mudit's digital twin
         </h2>
         <p className="text-muted-foreground mx-auto max-w-md">
-          The first portfolio that fit YOU needs.
+          A portfolio that adapts to you. Ask me anything!
         </p>
       </motion.div>
 
