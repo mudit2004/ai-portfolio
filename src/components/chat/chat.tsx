@@ -289,7 +289,7 @@ const Chat = () => {
             animationDuration={1.5}
             label="Star"
             size={'sm'}
-            repoUrl="https://github.com/toukoum/portfolio"
+            repoUrl="https://github.com/mudit2004/ai-portfolio"
           />
         </div>
       </div>
@@ -392,14 +392,6 @@ const Chat = () => {
             />
           </div>
         </div>
-        <a
-          href="https://x.com/toukoumcode"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed right-3 bottom-0 z-10 mb-4 hidden cursor-pointer items-center gap-2 rounded-xl px-4 py-2 text-sm hover:underline md:block"
-        >
-          @toukoum
-        </a>
       </div>
     </div>
   );
