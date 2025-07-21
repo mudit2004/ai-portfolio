@@ -1,43 +1,44 @@
 ![image](assets/readme-photo.png)
- 
+
 # World's first AI portfolio 🤖✨  
 
 **Static portfolios are dead.**  
-So I built [toukoum.fr](https://toukoum.fr).
+So I built [muditgolchha.dev](https://muditgolchha.dev).
 
-Instead of making you scroll endlessly, my portfolio adapts to *you*.  
-Ask a question — my AI avatar replies instantly.
+Instead of making you scroll endlessly, my portfolio *talks back*.  
+Ask anything — my AI avatar replies like it's me.
 
 ## 👇 What can you ask?
 
-- 🧠 **Tech recruiter?** Ask about my stack & results  
-- 💻 **Dev?** Dive into my code & mindset  
-- 🧑‍🤝‍🧑 **Friend or family?** See what I’ve been working on  
+- 🧠 **Recruiter?** Ask about my skills, projects, or resume  
+- 💻 **Developer?** Dive into my stack and how I think  
+- 🎸 **Just curious?** Discover my photography & guitar hobbies  
 
 ---
 
-This is not a portfolio.  
+This is not just a portfolio.  
 It’s a **conversation tailored to your curiosity**.
 
-➡️ **Try it now:** [https://toukoum.fr](https://toukoum.fr)  
+➡️ **Try it now:** [https://muditgolchha.dev](https://muditgolchha.dev)  
 *What will you ask?*
 
-## 🚀 How to run
+## 🚀 Run it locally
 
-Want to run this project locally? Here's what you need:
+Want to run this project locally? Here's how:
 
 ### Prerequisites
 - **Node.js** (v18 or higher)
 - **pnpm** package manager
-- **OpenAI API token** (for AI chat functionality)
-- **GitHub token** (for GitHub integration features)
+- **OpenAI API token** (for chat functionality)
+- **GitHub token** (for GitHub stars & metadata)
+
+### Setup
 
 ### Setup
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd portfolio
-   ```
+   git clone https://github.com/mudit2004/ai-portfolio.git
+   cd ai-portfolio
 
 2. **Install dependencies**
    ```bash
@@ -58,6 +59,8 @@ Want to run this project locally? Here's what you need:
 
 5. **Open your browser**
    Navigate to `http://localhost:3000`
+
+---
 
 ### Getting your **tokens**
 - **OpenAI API Key**: Get it from [platform.openai.com](https://platform.openai.com/api-keys)
