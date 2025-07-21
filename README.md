@@ -22,6 +22,8 @@ It’s a **conversation tailored to your curiosity**.
 ➡️ **Try it now:** [https://muditgolchha.dev](https://muditgolchha.dev)  
 *What will you ask?*
 
+---
+
 ## 🚀 Run it locally
 
 Want to run this project locally? Here's how:
@@ -31,8 +33,6 @@ Want to run this project locally? Here's how:
 - **pnpm** package manager
 - **OpenAI API token** (for chat functionality)
 - **GitHub token** (for GitHub stars & metadata)
-
-### Setup
 
 ### Setup
 1. **Clone the repository**
@@ -66,8 +66,7 @@ Want to run this project locally? Here's how:
 - **OpenAI API Key**: Get it from [platform.openai.com](https://platform.openai.com/api-keys)
 - **GitHub Token**: Generate one at [github.com/settings/tokens](https://github.com/settings/personal-access-tokens) with repo access
 
-
-
+---
 #### 🔖 Tags
 
 `#AIPortfolio` `#InnovationInTech` `#DigitalResume` `#JobSearch` `#TechInnovation` `#WebDevelopment` `#FutureTech`
