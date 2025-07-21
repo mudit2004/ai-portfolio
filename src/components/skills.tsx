@@ -1,82 +1,77 @@
-'use client';
+"use client";
 
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { motion } from 'framer-motion';
-import { Code, Cpu, PenTool, Users } from 'lucide-react';
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { Code, Cpu, PenTool, Users } from "lucide-react";
 
 const Skills = () => {
   const skillsData = [
     {
-      category: 'Frontend Development',
+      category: "Programming Languages",
+      icon: <Code className="h-5 w-5" />,
+      skills: ["Java", "Python", "C++", "C", "JavaScript", "TypeScript", "R"],
+      color: "bg-blue-50 text-blue-600 border border-blue-200",
+    },
+    {
+      category: "AI / ML / DL",
+      icon: <Cpu className="h-5 w-5" />,
+      skills: [
+        "Scikit-learn",
+        "Pandas",
+        "Numpy",
+        "Streamlit",
+        "Albumentations",
+        "TensorFlow",
+        "PyTorch",
+        "Reinforcement Learning (PPO/SAC)",
+        "Hugging Face",
+      ],
+      color: "bg-purple-50 text-purple-600 border border-purple-200",
+    },
+    {
+      category: "Web & Cloud",
       icon: <Code className="h-5 w-5" />,
       skills: [
-        'HTML',
-        'CSS',
-        'JavaScript/TypeScript',
-        'Tailwind CSS',
-        'Bootstrap',
-        'Next.js',
-        'React',
-        'Vercel AI SDK',
-        'Gsap',
+        "MERN Stack",
+        "Next.js",
+        "Tailwind CSS",
+        "MongoDB",
+        "SQL",
+        "Firebase",
+        "GCP",
+        "Vercel",
       ],
-      color: 'bg-blue-50 text-blue-600 border border-blue-200',
+      color: "bg-emerald-50 text-emerald-600 border border-emerald-200",
     },
     {
-      category: 'Backend & Systems',
+      category: "Tools & Systems",
       icon: <Cpu className="h-5 w-5" />,
       skills: [
-        'Unix',
-        'C',
-        'C++',
-        'Python',
-        'Typescript',
-        'Git',
-        'GitHub',
-        'Docker',
-        'GCP',
-        'PostgreSQL',
+        "Git",
+        "GitHub",
+        "Linux",
+        "Ubuntu",
+        "Xcode",
+        "Visual Studio Code",
+        "Docker",
+        "ANTLR4",
+        "Unity",
       ],
-      color: 'bg-emerald-50 text-emerald-600 border border-emerald-200',
+      color: "bg-orange-50 text-orange-600 border border-orange-200",
     },
     {
-      category: 'Design & Creative Tools',
-      icon: <PenTool className="h-5 w-5" />,
-      skills: ['Figma', 'Davinci Code', 'Illustrator', 'Canva', 'Keynote'],
-      color: 'bg-indigo-50 text-indigo-600 border border-indigo-200',
-    },
-    {
-      category: 'Soft Skills',
+      category: "Soft Skills",
       icon: <Users className="h-5 w-5" />,
       skills: [
-        'Communication',
-        'Problem-Solving',
-        'Adaptability',
-        'Learning Agility',
-        'Teamwork',
-        'Creativity',
-        'Focus',
+        "Communication",
+        "Teamwork",
+        "Adaptability",
+        "Creativity",
+        "Problem Solving",
+        "Leadership",
       ],
-      color: 'bg-amber-50 text-amber-600 border border-amber-200',
-    },
-    {
-      category: 'AI & Fullstack Engineering',
-      icon: <Cpu className="h-5 w-5" />,
-      skills: [
-        'LLM Providers (ChatGPT, Whisper, Groq, Mistral & Claude)',
-        'AI Agents',
-        'Prompt engineering',
-        'Vector databases (Weaviate, Pinecone)',
-        'RAG (Retrieval-Augmented Generation)',
-        'Tool routing & calling',
-        'Hugging Face Transformers',
-        'Vercel AI SDK',
-        'Supabase',
-        'Prisma',
-        'Next.js',
-      ],
-      color: 'bg-purple-50 text-purple-600 border border-purple-200',
+      color: "bg-amber-50 text-amber-600 border border-amber-200",
     },
   ];
 
@@ -105,7 +100,7 @@ const Skills = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.3, ease: 'easeOut' },
+      transition: { duration: 0.3, ease: "easeOut" },
     },
   };
 
