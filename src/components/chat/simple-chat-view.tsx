@@ -56,12 +56,12 @@ export function SimplifiedChatView({
   const hasTextContent = message.content.trim().length > 0;
   const hasTools = currentTool.length > 0;
 
-  console.log('currentTool', currentTool);
+
 
   return (
     <motion.div {...MOTION_CONFIG} className="flex h-full w-full flex-col px-4">
       {/* Single scrollable container for both tool and text content */}
-      <div className="custom-scrollbar flex h-full w-full flex-col overflow-y-auto">
+      <div className="custom-scrollbar flex h-full w-full flex-col overflow-y-auto overscroll-contain">
         {/* Tool invocation result - displayed at the top */}
         {hasTools && (
           <div className="mb-4 w-full">
