@@ -61,7 +61,9 @@ export default function ChatBottombar({
             onChange={handleInputChange}
             onKeyDown={handleKeyPress}
             placeholder={
-              isToolInProgress ? 'Tool is in progress...' : 'Ask me anything'
+              isToolInProgress
+                ? 'Hold on, getting that info for you...'
+                : 'Ask me about my projects, skills, or anything else!'
             }
             className="text-md w-full border-none bg-transparent text-black placeholder:text-gray-500 focus:outline-none"
             disabled={isToolInProgress || isLoading}
