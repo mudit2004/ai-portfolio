@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Build output
+.next/
+dist/
+
+# System files
+.DS_Store
+
+# Logs
+*.log
+pnpm-lock.yaml
+
+# Env and local settings
+.env
+.env.local
+.vscode/
+.idea/
