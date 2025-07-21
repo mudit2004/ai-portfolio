@@ -2,10 +2,15 @@ import { tool } from 'ai';
 import { z } from 'zod';
 
 export const getContact = tool({
-  description:
-    'This tool show a my contact informations.',
+  description: 'This tool returns Mudit Golchha’s contact information.',
   parameters: z.object({}),
   execute: async () => {
-    return "Here is my contact informations above, Feel free to contact me I will be happy to answer you 😉";
+    return {
+      name: 'Mudit Golchha',
+      email: 'golchhamudit2203@gmail.com',
+      github: 'https://github.com/mudit2004',
+      linkedin: 'https://www.linkedin.com/in/muditgolchha/',
+      message: 'Feel free to reach out via email or LinkedIn. I’d be happy to connect! 🚀',
+    };
   },
 });
