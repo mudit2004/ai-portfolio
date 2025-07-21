@@ -142,9 +142,9 @@ const Chat = () => {
       if (response) {
         setLoadingSubmit(false);
         setIsTalking(true);
-        if (videoRef.current) {
+        if (videoRef.current && videoRef.current.paused) {
           videoRef.current.play().catch((error) => {
-            console.error('Failed to play video:', error);
+            console.warn('Video play() interrupted:', error.message);
           });
         }
       }
@@ -152,14 +152,14 @@ const Chat = () => {
     onFinish: () => {
       setLoadingSubmit(false);
       setIsTalking(false);
-      if (videoRef.current) {
+      if (videoRef.current && !videoRef.current.paused) {
         videoRef.current.pause();
       }
     },
     onError: (error) => {
       setLoadingSubmit(false);
       setIsTalking(false);
-      if (videoRef.current) {
+      if (videoRef.current && !videoRef.current.paused) {
         videoRef.current.pause();
       }
       console.error('Chat error:', error.message, error.cause);
@@ -240,11 +240,11 @@ const Chat = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      if (isTalking) {
+      if (isTalking && videoRef.current.paused) {
         videoRef.current.play().catch((error) => {
           console.error('Failed to play video:', error);
         });
-      } else {
+      } else if (!isTalking && !videoRef.current.paused) {
         videoRef.current.pause();
       }
     }
