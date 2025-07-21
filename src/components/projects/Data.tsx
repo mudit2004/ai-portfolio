@@ -1,342 +1,69 @@
 import Image from 'next/image';
-import { Image as Img } from 'lucide-react';
 import { ChevronRight, Link } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import { url } from 'inspector';
 
-// Enhanced project content array with all projects
+// Project data
 const PROJECT_CONTENT = [
   {
-    title: 'Synto',
+    title: 'Interpreter for MLang',
     description:
-      'Synto is an AI-powered interface that transforms complex blockchain interactions into simple, natural language commands. Whether you want to send tokens, stake assets, swap coins, or even create NFTs or liquidity pools, just tell Synto what to do — no manual wallet interactions, no technical jargon. One of my biggest projects yet',
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'Web3.js',
-      'shadcn-ui',
-      'TypeScript',
-      'Phantom Wallet',
-      'OpenAI API',
-      'Vercel AI SDK',
-      'Solana Agent kit',
-      'Neon',
-      'Prisma'
-    ],
+      'Designed and implemented MLang, a custom programming language with a unique syntax using ANTLR4 and Java. Built a full AST-based interpreter with variable scope handling, control flow, and print support.',
+    techStack: ['Java', 'ANTLR4', 'AST', 'Compiler Design'],
     date: '2025',
     links: [
       {
-        name: 'website',
-        url: 'https://synto.fun',
-      },
-      {
-        name: 'Launch Video',
-        url: 'https://www.youtube.com/watch?v=4QUE2KgKDUw',
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/chainSynto',
-      },
-      {
-        name: 'Technical Video',
-        url: 'https://www.youtube.com/watch?v=1CjBLKPUwtA&feature=youtu.be',
-      },
-      {
-        name: 'Pitch Deck',
-        url: 'https://drive.google.com/file/d/1B3m44mEgv81rJHfjNfTKi147yX4raQed/view?usp=sharing',
-      },
-      {
-        name: 'Usage tutorial',
-        url: 'https://www.youtube.com/watch?v=PRu1cfvT2bA',
-      }
-    ],
-    images: [
-      {
-        src: '/synto1.png',
-        alt: 'Synto landing page',
-      },
-      {
-        src: '/synto2.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto3.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto4.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto5.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto6.png',
-        alt: 'Synto chat interface',
-      },
-    ],
-  },
-  {
-    title: 'Rrate',
-    description:
-      "Rrate is a fun website to allow user to compare his salary with the richest people in the world. Try it now it's online!",
-    techStack: ['Html', 'Css', 'Javascript'],
-    date: '2024',
-    links: [
-      {
-        name: 'website',
-        url: 'https://rrate.app',
-      },
-      {
-        name: 'github',
-        url: 'https://github.com/toukoum/Rrate',
+        name: 'GitHub',
+        url: 'https://github.com/mudit2004/MLang',
       },
     ],
     images: [
       {
-        src: '/rrate1.png',
-        alt: 'Rrate landing page',
-      },
-      {
-        src: '/rrate2.png',
-        alt: 'Rrate comparison page',
-      },
-      {
-        src: '/rrate3.png',
-        alt: 'Rrate comparison page',
+        src: '/mlang-placeholder.png',
+        alt: 'MLang project preview',
       },
     ],
   },
   {
-    title: 'Defai',
+    title: 'RL-Based Self-Driving Car in Unity',
     description:
-      "We Win ETHOXford hackathon by building DEFAI. DEFAI stands for Decentralized Finance Artificial Intelligence. It's an AI-powered chat interface that simplifies on-chain operations on the Avalanche blockchain by allowing users to interact using natural language. This makes complex DeFi operations accessible even for those with limited technical expertise.",
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Vercel AI SDK',
-      'TypeScript',
-    ],
-    date: '2025',
-    links: [
-      {
-        name: 'website',
-        url: 'https://dorahacks.io/buidl/22605',
-      },
-      {
-        name: 'github',
-        url: 'https://github.com/toukoum/DEFAI',
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7299337190151483392/',
-      },
-      {
-        name: 'Youtube Video',
-        url: 'https://www.youtube.com/watch?v=N9O7los4-ng&t=34s&ab_channel=Toukoum',
-      }
-    ],
-    images: [
-      {
-        src: '/defai1.png',
-        alt: 'Landing Page of Defai',
-      },
-      {
-        src: '/defai2.png',
-        alt: 'Confirmation popup of Defai',
-      },
-      {
-        src: '/defai3.png',
-        alt: 'Chatbot of Defai',
-      },
-      {
-        src: '/defai4.jpeg',
-        alt: 'Winner team',
-      },
-    ],
-  },
-  {
-    title: 'Fitgear',
-    description:
-      'Won the Gotta Go Hack IA by building Fitgear, a virtual voice seller accessible by QR code to improve the ratio between customers and sellers. Created an AI pipeline with API calls and a RAG system for natural language interactions.',
-    techStack: ['Next.js', 'TailwindCSS', 'OpenAI API', 'Langchain'],
-    date: '2024',
-    links: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/posts/raphael-giraud-60939519a_hackathon-innovation-sporttech-activity-7210399263774674946-qSXq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC6vwikBVSEkS7XWktWS7y6GR3GHwAlKslc',
-      },
-    ],
-    images: [
-      {
-        src: '/fitgear2.png',
-        alt: 'Fitgear chatbot',
-      },
-      {
-        src: '/fitgear1.png',
-        alt: 'Fitgear landing page',
-      },
-    ],
-  },
-  {
-    title: 'Datai',
-    description:
-      "DATAI is an AI-powered agent that lets non-technical users query a database using natural language without writing SQL. Built using Next.js, TailwindCSS, shadcn-ui, and Anthropic's Claude API, this project focuses on simplicity, speed, and user-friendly design.",
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Claude API',
-      'TypeScript',
-    ],
+      'Created an autonomous driving agent using PPO and SAC algorithms inside a Unity environment. Integrated RayPerceptionSensor3D, invisible checkpoints, and custom reward shaping to enhance driving performance and reduce training time.',
+    techStack: ['Unity', 'PPO', 'SAC', 'C#', 'ML-Agents'],
     date: '2024',
     links: [
       {
         name: 'GitHub',
-        url: 'https://github.com/toukoum/datai',
-      },
-      {
-        name: 'Youtube Video Demo',
-        url: 'https://youtu.be/iE0RXjdbQsw',
-      }
-    ],
-    images: [
-      {
-        src: '/datai1.png',
-        alt: 'Datai landing page',
-      },
-      {
-        src: '/datai2.png',
-        alt: 'Datai chatbot',
-      },
-      {
-        src: '/datai3.png',
-        alt: 'Datai chatbot',
-      },
-      {
-        src: '/datai4.png',
-        alt: 'Datai chatbot',
-      }
-    ],
-  },
-  {
-    title: '3d Pong Game',
-    description:
-      "Transcendance is the final project of my 42 cursus. It's a 3D pong game with multiplayer capabilities, user authentication, and real-time gameplay. We had to do everything from scratch, so it was pretty challenging and we learned a lot.",
-    techStack: ['Django', 'Python', 'JavaScript', 'Websockets', 'PostgreSQL', 'Docker', 'Nginx', 'Web3', 'Solidity'],
-    date: '2023',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Transcendance',
+        url: 'https://github.com/mudit2004/RL-Based-Self-Driving-Car-in-Unity',
       },
     ],
     images: [
       {
-        src: '/trans1.png',
-        alt: 'Transcendance landing page',
-      },
-      {
-        src: '/trans2.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans3.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans4.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans5.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans6.png',
-        alt: 'Transcendance game',
-      }
-
-    ],
-  },
-  {
-    title: 'Minishell',
-    description:
-      "Minishell is a project that aims to create a simple shell. It's a great introduction to process creation and management in C, offering fundamental Unix command-line functionality. This was a very challenging project, but I learned a lot from it.",
-    techStack: ['C', 'Unix', 'Bash'],
-    date: '2023',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Michelle-42',
-      },
-    ],
-    images: [
-      {
-        src: '/minishell1.png',
-        alt: 'Minishell landing page',
-      }
-    ],
-  },
-  {
-    title: 'YouBot',
-    description:
-      'YouBot is a Python Bot that Scrapes Videos from Pexels, adds a random song from a Songs Folder, then auto-uploads the videos to your YouTube Channel for continuous content generation.',
-    techStack: ['Python', 'YouTube API', 'Pexels API'],
-    date: '2022',
-    links: [
-      {
-        name: "YouTube Video",
-        url: "https://youtu.be/vp1v5mBG7rA "
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/YouBot',
-      }
-    ],
-    images: [
-      {
-        src: '/youbot1.jpg',
-        alt: 'Youbot landing page',
-      },
-      {
-        src: '/youbot2.png',
-        alt: 'Youbot chatbot',
+        src: '/rlcar-placeholder.png',
+        alt: 'RL Car preview',
       },
     ],
   },
   {
-    title: 'Old Portfolio',
+    title: 'Brain Tumor Diagnosis via ML Models',
     description:
-      'My previous traditional portfolio built with vanilla HTML, CSS and JS with GSAP animations for a smooth and interactive user experience.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-    date: '2022',
+      'Collaborated to build a diagnostic system using 10 ML models on metabolite profiles, achieving 91.95% accuracy with EvoHDTree. Added a GUI for interpreting predictions and visualizing results.',
+    techStack: ['Python', 'Scikit-learn', 'Streamlit', 'ADASYN'],
+    date: '2024',
     links: [
       {
-        name: 'Website',
-        url: 'https://toukoum.github.io/oldPortfolio/',
-      },
-      {
         name: 'GitHub',
-        url: 'https://github.com/toukoum/portfolio',
+        url: 'https://github.com/mudit2004/Enhancing-Machine-Learning-Models-for-Early-Brain-Tumor-Diagnosis',
       },
     ],
     images: [
       {
-        src: '/oldport1.png',
-        alt: 'Old Portfolio landing page',
+        src: '/brainml-placeholder.png',
+        alt: 'Brain tumor diagnosis preview',
       },
-      {
-        src: '/oldport2.png',
-        alt: 'Old Portfolio projects',
-      }
     ],
   },
 ];
 
-// Define interface for project prop
+// Interface
 interface ProjectProps {
   title: string;
   description?: string;
@@ -347,7 +74,6 @@ interface ProjectProps {
 }
 
 const ProjectContent = ({ project }: { project: ProjectProps }) => {
-  // Find the matching project data
   const projectData = PROJECT_CONTENT.find((p) => p.title === project.title);
 
   if (!projectData) {
@@ -356,18 +82,14 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 
   return (
     <div className="space-y-10">
-      {/* Header section with description */}
       <div className="rounded-3xl bg-[#F5F5F7] p-8 dark:bg-[#1D1D1F]">
         <div className="space-y-6">
           <div className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
             <span>{projectData.date}</span>
           </div>
-
           <p className="text-secondary-foreground font-sans text-base leading-relaxed md:text-lg">
             {projectData.description}
           </p>
-
-          {/* Tech stack */}
           <div className="pt-4">
             <h3 className="mb-3 text-sm tracking-wide text-neutral-500 uppercase dark:text-neutral-400">
               Technologies
@@ -386,8 +108,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
         </div>
       </div>
 
-      {/* Links section */}
-      {projectData.links && projectData.links.length > 0 && (
+      {projectData.links && (
         <div className="mb-24">
           <div className="px-6 mb-4 flex items-center gap-2">
             <h3 className="text-sm tracking-wide text-neutral-500 dark:text-neutral-400">
@@ -398,23 +119,22 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
           <Separator className="my-4" />
           <div className="space-y-3">
             {projectData.links.map((link, index) => (
-                <a
+              <a
                 key={index}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-[#F5F5F7] flex items-center justify-between rounded-xl p-4 transition-colors hover:bg-[#E5E5E7] dark:bg-neutral-800 dark:hover:bg-neutral-700"
-                >
+              >
                 <span className="font-light capitalize">{link.name}</span>
                 <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
+              </a>
             ))}
           </div>
         </div>
       )}
 
-      {/* Images gallery */}
-      {projectData.images && projectData.images.length > 0 && (
+      {projectData.images && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 gap-4">
             {projectData.images.map((image, index) => (
@@ -437,60 +157,23 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
   );
 };
 
-// Main data export with updated content
 export const data = [
   {
-    category: 'Startup Project',
-    title: 'Synto',
-    src: '/syntopreview.png',
-    content: <ProjectContent project={{ title: 'Synto' }} />,
+    category: 'Programming Languages',
+    title: 'Interpreter for MLang',
+    src: '/mlang-placeholder.png',
+    content: <ProjectContent project={{ title: 'Interpreter for MLang' }} />,
   },
   {
-    category: 'Fun Tool',
-    title: 'Rrate',
-    src: '/ratepreview.png',
-    content: <ProjectContent project={{ title: 'Rrate' }} />,
+    category: 'Reinforcement Learning',
+    title: 'RL-Based Self-Driving Car in Unity',
+    src: '/rlcar-placeholder.png',
+    content: <ProjectContent project={{ title: 'RL-Based Self-Driving Car in Unity' }} />,
   },
   {
-    category: 'Hackathon Winner',
-    title: 'Defai',
-    src: '/defaipreview.png',
-    content: <ProjectContent project={{ title: 'Defai' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Fitgear',
-    src: '/fitgearpreview.png',
-    content: <ProjectContent project={{ title: 'Fitgear' }} />,
-  },
-  {
-    category: 'Business Intelligence',
-    title: 'Datai',
-    src: '/dataipreview.png',
-    content: <ProjectContent project={{ title: 'Datai' }} />,
-  },
-  {
-    category: '42 Project',
-    title: '3d Pong Game',
-    src: '/transcendancepreview.png',
-    content: <ProjectContent project={{ title: '3d Pong Game' }} />,
-  },
-  {
-    category: '42 Project',
-    title: 'Minishell',
-    src: '/minishellpreview.png',
-    content: <ProjectContent project={{ title: 'Minishell' }} />,
-  },
-  {
-    category: 'Automation',
-    title: 'YouBot',
-    src: '/youbotpreview.png',
-    content: <ProjectContent project={{ title: 'YouBot' }} />,
-  },
-  {
-    category: 'Web Development',
-    title: 'Old Portfolio',
-    src: '/oldportfoliopreview.png',
-    content: <ProjectContent project={{ title: 'Old Portfolio' }} />,
+    category: 'Machine Learning',
+    title: 'Brain Tumor Diagnosis via ML Models',
+    src: '/brainml-placeholder.png',
+    content: <ProjectContent project={{ title: 'Brain Tumor Diagnosis via ML Models' }} />,
   },
 ];
