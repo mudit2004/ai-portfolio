@@ -26,11 +26,15 @@ const CodeBlock = ({ content }: { content: string }) => {
   // Extract language if present in the first line
   const firstLineBreak = content.indexOf('\n');
   const firstLine = content.substring(0, firstLineBreak).trim();
-  const language = firstLine || 'text';
+
+  // Force a simple, friendly label
+  const language = 'Code';
+
+  // Clean actual code by skipping the first line (in case it's a fake language tag)
   const code = firstLine ? content.substring(firstLineBreak + 1) : content;
 
   // Get first few lines for preview
-  const previewLines = code.split('\n').slice(0, 1).join('\n');
+  const previewLines = code.split('\n').slice(0, 3).join('\n');
   const hasMoreLines = code.split('\n').length > 1;
 
   return (
