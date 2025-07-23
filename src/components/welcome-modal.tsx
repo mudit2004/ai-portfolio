@@ -31,7 +31,7 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
       onClick={() => setIsOpen(true)}
     >
       <Image
-        src="/logo-toukoum.svg"
+        src="/logo-mudit.png"
         width={100}
         height={100}
         alt="Logo"
@@ -92,29 +92,25 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
                 {/* What section */}
                 <div className="space-y-3">
                   <h3 className="text-primary flex items-center gap-2 text-xl font-semibold">
-                    What's ????
+                    What is this?
                   </h3>
                   <p className="text-accent-foreground text-base leading-relaxed">
-                    I'm so excited to present my{' '}
-                    <strong>brand new AI Portfolio.</strong>
-                    <br /> Whether you're a recruiter, a friend, family member,
-                    or just curious, feel free to ask anything you want!
+                    Welcome to my <strong>AI-powered portfolio</strong>!<br />
+                    Whether you're a recruiter, a developer, or just curious —
+                    ask me anything and get tailored answers in real-time.
                   </p>
                 </div>
 
                 {/* Why section */}
                 <div className="space-y-3">
                   <h3 className="text-primary flex items-center gap-2 text-xl font-semibold">
-                    Why ???
+                    Why did I build it?
                   </h3>
                   <p className="text-accent-foreground text-base leading-relaxed">
-                    Traditional portfolios can be limiting. <br /> They can't
-                    adapt to every visitor's specific needs. <br /> My portfolio
-                    becomes{' '}
-                    <strong>
-                      exactly what you're interested in knowing about me and my
-                      work.
-                    </strong>
+                    Traditional portfolios are one-size-fits-all. <br />
+                    I wanted something interactive — that adapts to <strong>you</strong>.<br />
+                    This portfolio becomes <strong>exactly what you're curious about</strong>,
+                    whether it's my skills, projects, or passions.
                   </p>
                 </div>
               </section>
