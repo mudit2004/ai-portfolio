@@ -85,7 +85,7 @@ export default function Home() {
           animationDuration={1.5}
           label="Star"
           size={'sm'}
-          repoUrl="https://github.com/toukoum/portfolio"
+          repoUrl="https://github.com/mudit2004/ai-portfolio"
         />
       </div>
 
