@@ -11,7 +11,7 @@ const Gallery = () => {
       caption: 'Binghamton in Summer — my home base for now',
     },
     {
-      src: '/event-portrai.png',
+      src: '/event-portrait.png',
       alt: 'Portrait during university event',
       caption: 'A candid portrait from an event I covered with Estudio',
     }
